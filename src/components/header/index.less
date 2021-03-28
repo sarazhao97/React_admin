@@ -1,0 +1,50 @@
+.header{
+    height: 80px;
+    background-color: #fff;
+    
+    .header-top{
+        height: 40px;
+        border-bottom: 1px solid #1da57a;
+        text-align: right;
+        padding-right: 30px;
+        line-height: 40px;
+        span{
+            margin-right: 10px;
+        }
+    }
+    .header-bottom{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        .header-bottom-left{
+            position: relative;
+            width: 25%;
+            font-size: 20px;
+            text-align: center;
+            &::after{
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+                display: block;
+                height: 0;
+                width: 0;
+                border: 20px solid rgb(70, 67, 67);
+                border-color: #fff transparent transparent transparent;
+            
+            }
+        }
+        .header-bottom-right{
+            width: 75%;
+            text-align: right;
+            margin-right: 30px;
+           span{
+               margin-right: 10px;
+               strong{
+                   color: red;
+               }
+           }
+        }
+    }
+}
